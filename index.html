@@ -1,45 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat-App</title>
-</head>
-<body>
-    <div class="rectangle"></div>
-    <section class="mobile">
+  </head>
+  <body>
+    <main>
+      <section class="mobile">
         <div class="avatar-container">
-            <img src="assets/images/avatar.jpg" alt="">
-            <h2>Smauel Green <span class="avaliable">Avaliable to walk</span></h2>
+            <div class="header">
+                <img src="assets/images/Path 4.svg" alt="">
+                <img class="profile-image" src="assets/images/avatar.jpg" alt="">
+                <div class="avatar-text">
+                    <h2>Samuel Green</h2>
+                    <h3>Avaliable to Walk</h3> 
+                </div> 
+            </div>
+            <img src="assets/images/Combined Shape.svg" alt="">
         </div>
-        <article class="chat">
-            <div class="text-left">
-                <p>That sounds great. I’d be happy to discuss more.</p>
-                <p>Could you send over some pictures of your dog, please?</p>
+        <div class="chat">
+                  <div class="message message-left">
+            <p>That sounds great. I’d be happy to discuss more.</p>
+        </div>
+        <div class="message message-left">
+            <p>Could you send over some pictures of your dog, please?</p>
+        </div>
+        <div class="message message-right">
+            <div class="images">
+                <img class="dog" src="assets/images/dog-image-1.jpg" alt="">
+            <img class="dog" src="assets/images/dog-image-2.jpg" alt="">
+            <img class="dog" src="assets/images/dog-image-3.jpg" alt="">
             </div>
-            <div class="text-right">
-                <img src="assets/images/dog-image-1.jpg" alt="">
-                <img src="assets/images/dog-image-2.jpg" alt="">
-                <img src="assets/images/dog-image-3.jpg" alt="">
-                <p>Here are a few pictures. She’s a happy girl!</p>
-                <p>Can you make it?</p>
-            </div>
-            <div class="text-left">
-                <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-                <div class="selection">
-                    <h2>30 minute walk <span class="currency">$29</span></h2>
-                </div>
-                <div class="selection">
-                    <h2>1 hour walk <span class="currency">$49</span></h2>
-                </div>
-            </div>
-            <div class="text-bar"></div>
-        </article>
+        </div>
+        <div class="message message-right">
+            <p>Here are a few pictures. She’s a happy girl!</p>
+        </div>
+        <div class="message message-right">
+            <p>Can you make it?</p>
+        </div>
+        <div class="message message-left">
+            <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+        </div>
+        <div class="message message-special">
+            <p>30 minute walk <span>$29</span></p>
+        </div>
+        <div class="message message-special">
+            <p>1 hour walk <span>$49</span></p>
+        </div>
+        <div class="text-bar">
+            <img src="assets/images/Path.svg" alt="">
+        </div>
+        </div>
     </section>
-    <section class="intro">
+      <section class="intro">
         <h1>Simple Booking</h1>
-        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
-    </section>
-</body>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+    </main>
+  </body>
 </html>
