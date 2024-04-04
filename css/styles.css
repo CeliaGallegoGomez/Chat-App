@@ -92,6 +92,7 @@ body::after{
   position: absolute;
   background-color: #f5f3f7;
   width: 228px;
+  height: 420px;
   border-radius: 0 0 20px 20px;
 }
 .avatar-container {
@@ -161,9 +162,13 @@ h3 {
 }
 
 .images {
+  position: absolute;
+  top: 130px;
+  left: 85px;
   display: flex;
   width: 136px;
   justify-content: space-around;
+  background-color: transparent;
 }
 
 .dog {
@@ -172,7 +177,7 @@ h3 {
   border-radius: 10px;
 }
 
-.message-left {
+.msg-1 {
   position: relative;
   width: 128px;
   color: #9341c8;
@@ -182,10 +187,25 @@ h3 {
   border-radius: 15px 15px 15px 6px;
 }
 
-.message-right {
+.msg-2 {
+  position: absolute;
+  top: 60px;
+  width: 128px;
+  color: #9341c8;
+  background-color: #eee5f4;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 15px 15px 15px 6px;
+}
+
+.msg-3 {
+  position: absolute;
   width: 128px;
   color: #6e5d7e;
   background-color: #fff;
+  top: 175px;
+  left: 85px;
+  padding: 8px;
   border-radius: 15px 15px 6px 15px;
 }
 
