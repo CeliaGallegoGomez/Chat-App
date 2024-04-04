@@ -35,7 +35,7 @@ main::before,main::after{
 
 main::before{
   height: 550px;
-  top: 0;
+  top: -80px;
   right: 187px;
   border-bottom-right-radius: 255px;
 }
@@ -54,30 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-body::before,body::after {
-  content: '';
-  position: absolute;
-  width: 510px;
-  background-image: linear-gradient(to right,#8739ff, #e844ff);
-  opacity: 0.1;
-  z-index: -1;
-}
-
-body::before {
-  height: 1018px;
-  top: 0;
-  right: 187px;
-  border-bottom-right-radius: 255px;
-}
-
-body::after{
-  left: 187px;
-  height: 550px;
-  top: 320px;
-  border-top-left-radius: 255px;
-  opacity: 0.1;
+  background-color: #FAFAFA;
 }
 
 .mobile {
@@ -87,6 +64,15 @@ body::after{
   background-color: white;
   border-radius: 20px;
   border: 10px solid white;
+}
+
+.box-top {
+  position: absolute;
+  top: 0;
+  background-color: white;
+  border-radius: 0 0 16px 16px ;
+  width: 129px;
+  height: 20px;
 }
 
 .chat {
@@ -145,12 +131,20 @@ h2 {
   font-size: 11px;
   color: #fff;
   margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h3 {
   font-size: 8px;
   color: #d99eff;
   margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal
 }
 
 .header {
@@ -178,7 +172,7 @@ h3 {
 
 .images {
   position: absolute;
-  top: 130px;
+  top: 112px;
   left: 85px;
   display: flex;
   width: 136px;
@@ -200,18 +194,19 @@ h3 {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 8px;
-  padding: 8px;
   margin: 8px;
   border-radius: 15px 15px 15px 6px;
 }
 
 .msg-2 {
   position: absolute;
-  top: 60px;
+  top: 52px;
   width: 128px;
   color: #9341c8;
   background-color: #eee5f4;
-  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
   margin: 8px;
   border-radius: 15px 15px 15px 6px;
 }
@@ -221,9 +216,12 @@ h3 {
   width: 128px;
   color: #6e5d7e;
   background-color: #fff;
-  top: 175px;
+  top: 155px;
   left: 85px;
-  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  margin: 8px;
   border-radius: 15px 15px 6px 15px;
 }
 
@@ -232,50 +230,71 @@ h3 {
   width: 128px;
   color: #6e5d7e;
   background-color: #fff;
-  top: 237px;
+  top: 206px;
   left: 85px;
-  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  margin: 8px;
   border-radius: 15px 15px 6px 15px;
 }
 
 .msg-5 {
   position: absolute;
-  top: 280px;
+  top: 245px;
   width: 128px;
   color: #9341c8;
   background-color: #eee5f4;
-  padding: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
   margin: 8px;
   border-radius: 15px 15px 15px 6px;
 }
 
 .message-special-1 {
   position: absolute;
-  top: 340px;
+  top: 307px;
+  width: 160px;
+  height: 32px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(to right,#e844ff, #8739ff);
   color: #fff;
-  padding: 6px;
   border-radius: 15px 15px 15px 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  margin: 8px;
   
 }
 
 .message-special-2 {
   position: absolute;
+  top: 345px;
+  width: 160px;
+  height: 32px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(to right,#e844ff, #8739ff);
   color: #fff;
-  padding: 6px;
   border-radius: 15px 15px 15px 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  margin: 8px;
 }
 
 .text-bar {
+  position: absolute;
+  top: 380px;
+  left: 7px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 4px;
   align-items: center;
   width: 213px;
   background-color: #fff;
@@ -292,14 +311,27 @@ h3 {
 }
 
 .ttext-bar {
-  font-size: 9px;
+  font-size: 8px;
   color: #C5C9CC;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 12px;
 }
 
 .box {
   width: 12px;
   height: 12px;
   border-radius: 100%;
-  border-radius: 1px solid #E472FF;
-  background-color: white;
+  border: 1px solid #E472FF;
+  background-color: transparent;
+}
+
+.price {
+  font-size: 12px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal
 }
