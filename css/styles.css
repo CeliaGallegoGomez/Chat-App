@@ -45,7 +45,7 @@ main::after{
   height: 550px;
   top: 320px;
   border-top-left-radius: 255px;
-  opacity: 0.1;
+  opacity: 3%;
 }
 
 body {
@@ -61,6 +61,7 @@ body::before,body::after {
   position: absolute;
   width: 510px;
   background-image: linear-gradient(to right,#8739ff, #e844ff);
+  opacity: 0.1;
   z-index: -1;
 }
 
@@ -126,6 +127,20 @@ body::after{
   border: 1px solid white;
 }
 
+h1 {
+  font-size: 40px;
+  color: #3E2753;
+  text-align: center;
+}
+
+.para {
+  font-size: 16px;
+  color: #A39DA9;
+  text-align: center;
+  line-height: 28px;
+  margin: 32px;
+}
+
 h2 {
   font-size: 11px;
   color: #fff;
@@ -182,6 +197,9 @@ h3 {
   width: 128px;
   color: #9341c8;
   background-color: #eee5f4;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
   padding: 8px;
   margin: 8px;
   border-radius: 15px 15px 15px 6px;
@@ -209,11 +227,52 @@ h3 {
   border-radius: 15px 15px 6px 15px;
 }
 
-.message-special {
+.msg-4 {
+  position: absolute;
+  width: 128px;
+  color: #6e5d7e;
+  background-color: #fff;
+  top: 237px;
+  left: 85px;
+  padding: 8px;
+  border-radius: 15px 15px 6px 15px;
+}
+
+.msg-5 {
+  position: absolute;
+  top: 280px;
+  width: 128px;
+  color: #9341c8;
+  background-color: #eee5f4;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 15px 15px 15px 6px;
+}
+
+.message-special-1 {
+  position: absolute;
+  top: 340px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-image: linear-gradient(to right,#e844ff, #8739ff);
   color: #fff;
+  padding: 6px;
+  border-radius: 15px 15px 15px 6px;
   
 }
+
+.message-special-2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right,#e844ff, #8739ff);
+  color: #fff;
+  padding: 6px;
+  border-radius: 15px 15px 15px 6px;
+}
+
 .text-bar {
   display: flex;
   justify-content: space-around;
@@ -235,4 +294,12 @@ h3 {
 .ttext-bar {
   font-size: 9px;
   color: #C5C9CC;
+}
+
+.box {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border-radius: 1px solid #E472FF;
+  background-color: white;
 }
