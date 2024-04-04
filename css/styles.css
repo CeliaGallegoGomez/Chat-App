@@ -79,7 +79,6 @@ body::after{
   opacity: 0.1;
 }
 
-
 .mobile {
   position: relative;
   width: 247px;
@@ -108,9 +107,11 @@ body::after{
 }
 
 .avatar-text {
-  margin: 0;
+  width: 74px;
+  height: 24px;
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .profile-image {
@@ -132,10 +133,15 @@ h3 {
 
 .header {
   display: flex;
-  width: 106px;
+  width: 196px;
   height: 24px;
   align-items: center;
-  justify-content: space-between;
+  gap: 8px;
+}
+
+.menu{
+  display: block;
+  margin-left: auto;
 }
 
 .message {
